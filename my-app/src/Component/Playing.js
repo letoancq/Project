@@ -4,17 +4,17 @@ import "react-h5-audio-player/lib/styles.css";
 import { Songs } from "../Context";
 
 function Playing(props) {
-    const {song, handleSetSong} = useContext(Songs)
-    const handleClickNext = () => {
-        handleSetSong(song.id +1)
-    };
-    const handleClickPrev = () => {
-        handleSetSong(song.id -1)
-
-    };
+  const { song, handleSetSong } = useContext(Songs);
+  const handleClickNext = () => {
+    handleSetSong(song.id + 1);
+  };
+  const handleClickPrev = () => {
+    handleSetSong(song.id - 1);
+  };
   return (
     <div>
       <AudioPlayer
+        autoPlay={true}
         className="player-music"
         src={song.url}
         layout="stacked-reverse"

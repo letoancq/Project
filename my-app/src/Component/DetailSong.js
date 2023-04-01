@@ -18,7 +18,7 @@ function DetailSong() {
 
       <div className="flex justify-evenly items-center mt-10">
         <img
-          className="w-[70px] rounded-full"
+          className="w-[70px] rounded-full xoayvong"
           src={song.links.images[1].url}
           alt="avatar"
         />

@@ -72,3 +72,23 @@
   background-color: transparent;
   color: turquoise;
 }
+
+.xoayvong {
+  animation: xoayvong 3s linear 0s infinite;
+  -webkit-animation: xoayvong 2s linear 0s infinite;
+  -moz-animation: xoayvong 2s linear 0s infinite;
+  -o-animation: xoayvong 2s linear 0s infinite; 
+}
+
+@keyframes xoayvong {
+  from {
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+  }
+  to {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+  }
+}
